@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6D94C6792D9D0BC500D5F49C /* TranscriptionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6D94C6782D9D0BC500D5F49C /* TranscriptionKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6D94C6662D9CF65000D5F49C /* VoiceVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D94C6792D9D0BC500D5F49C /* TranscriptionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = VoiceVault;
 			packageProductDependencies = (
+				6D94C6782D9D0BC500D5F49C /* TranscriptionKit */,
 			);
 			productName = VoiceVault;
 			productReference = 6D94C6662D9CF65000D5F49C /* VoiceVault.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 6D94C65D2D9CF65000D5F49C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6D94C6772D9D0BC500D5F49C /* XCLocalSwiftPackageReference "TranscriptionKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6D94C6672D9CF65000D5F49C /* Products */;
 			projectDirPath = "";
@@ -255,6 +264,8 @@
 				DEVELOPMENT_TEAM = 73Y8M25TWY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the memo. Audio is also saved for the memo.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your memo in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +295,8 @@
 				DEVELOPMENT_TEAM = 73Y8M25TWY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the memo. Audio is also saved for the memo.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your memo in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +337,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6D94C6772D9D0BC500D5F49C /* XCLocalSwiftPackageReference "TranscriptionKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TranscriptionKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D94C6782D9D0BC500D5F49C /* TranscriptionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TranscriptionKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D94C65E2D9CF65000D5F49C /* Project object */;
 }
